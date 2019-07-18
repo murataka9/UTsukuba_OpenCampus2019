@@ -50,62 +50,48 @@
 		 <div class="container">
 			 <div class="row">
 				 <div class="col-md-12">
-					  <h1>Hello World!</h1>
-					  <p class="lead">This is an Awesome App Landing Page</p>
-					  
-					  <div class="carousel-iphone">
-					  	<div id="carousel-example-generic" class="carousel slide">
-					    
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					    </ol>
-					  
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					      <div class="item active">
-					        <img src="img/screenshots/app-1.png" alt="App Screen 1">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/app-2.png" alt="App Screen 2">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/app-3.png" alt="App Screen 3">
-					      </div>
-					      
-					    </div>
-					  </div>
-					</div>
+				 	  <img class="top-logo" src="img/splash/utlogo.png">
+					  <h2>情報学群 知識情報・図書館学類</h2>
+					  <p class="top-en">Collage of Knowledge and Library Sciences</p>
+					  <h1>大学説明会</h1>
+					  <p class="top-en-h1">Open Campus</p>
 				</div>	  
 			</div>    
 		</div>
 	 </header>
-	  
-	  
-	  <!-- PURCHASE
+
+
+	  <!-- HEADERNAV
 	      ================================================== -->
-	  <section class="purchase">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					 <h1>Everything's easily customizable.</h1>
-					 	    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					 	    <button type="button" class="app-store"></button>	
-				  </div>
+	  <nav class="hnavbar">
+	  	  <div class="row">
+			<div class="col-md-3">
+			    <a class="hnav-info">開催 2019.08.03</a>    
+			</div>
+
+			<div class="col-md-6 col-md-offset-2">
+			    <ul class="hnav navbar-nav">
+			      <li class="button"><a onclick="$('header').animatescroll({padding:71});">Top</a></li>
+			      <li class="button"><a onclick="$('.payoff').animatescroll({padding:71});">About</a></li>
+			      <li class="button"><a onclick="$('.detail').animatescroll({padding:71});">Topics</a></li>
+			      <li class="button"><a onclick="$('.features').animatescroll({padding:71});">Program</a></li>
+			      <li class="button"><a onclick="$('.social').animatescroll({padding:71});">Contact</a></li>
+			    </ul>
 			  </div>
 		  </div>
-	  </section>
-	  
-	  
+	  </nav>
+
 	  <!-- PAYOFF 
 	      ================================================== -->
 	  <section class="payoff">
 		<div class="container">
 			  <div class="row">
+			      <h1 class="col-md-3"> About </h1>
+			  </div>
+			  <div class="row">
 				  <div class="col-md-12">
-					  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
+					  <h2>知識情報・図書館学類とは</h2>
+					  <p>知識情報・図書館学類では知識とはなにかから学び，知識や情報を有効に活用するための様々な仕組みを考えます．図書館やインターネット，データの利用や分析，未来への知識や情報の伝達などが含まれています．また学類問わずほとんどの科目は自由に取れるので，システムや経営，文学，芸術など自分のやりたいことと関連付けて学べます．</p>
 				  </div>
 			  </div>
 		  </div>	  
@@ -228,11 +214,39 @@
 	  <section class="get-it">
 	  	<div class="container">
 	  		<div class="row">
-	  			<div class="col-md-12">
-	  				<h1>Avaialable now on the App Store</h1>
-	  				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-	  				<button type="button" class="app-store"></button>
+                
+                <div class="col-md-12" style="margin-bottom: 6em">
+	  				<h1 style="border-bottom: 1px solid;">Credit</h1>
+	  				<p class="lead">筑波大学 情報学群 知識情報・図書館学類の大学説明会は学類の支援と </br>学生による大学説明会実行委員会により運営されています．</br> </p>
+	  				<p style="margin-top: 3em">知識情報・図書館学類 大学説明会実行委員会</p>
 	  			</div>
+
+
+	  			<div class="col-md-12" style="margin-bottom: 6em">
+	  				<h1>Links</h1>
+	  				<p class="lead" style="border-bottom: 1px solid;">学群・学類・学校等関連サイトのご紹介です．</p>
+
+	  				<ul>
+	  					<li><button type="button" class="utsukuba" alt="筑波大学"></button></li>
+	  					<li><button type="button" class="admission" alt="アドミッションセンター"></button></li>
+	  					<li><button type="button" class="informatics" alt="情報学群"></button></li>
+	  					<li><button type="button" class="klis" alt="知識情報・図書館学類"></button></li>
+	  					<li><button type="button" class="mast" alt="情報メディア創生学類"></button></li>
+	  					<li><button type="button" class="coins" alt="情報科学類"></button></li>
+	  				</ul>
+	  			</div>
+
+	  			<div class="col-md-12">
+	  				<h1>Social</h1>
+	  				<p class="lead" style="border-bottom: 1px solid #;">SNSはこちらです．</p>
+
+	  				<ul>
+	  			   	    <a class="icon-twitter"></a>
+	  			   	    <a class="icon-instagram"></a>
+	  				</ul>
+	  			</div>
+
+
 	  			<div class="col-md-12">
 	  				<hr />
 		  			<ul>

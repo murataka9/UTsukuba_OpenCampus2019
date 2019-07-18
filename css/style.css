@@ -14,6 +14,8 @@ _/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/
                                   													 */
 @import "iconfont.css";
 @import "animate.min.css";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notoserifjapanese.css);
 
 /*-----------------------------------------------------------------------------------*/
 /* GENERAL
@@ -21,14 +23,15 @@ _/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/
 
 body{
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Noto Sans Japanese', sans-serif;
 }
+
+
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	color: #3a3a3a;
-	font-weight: 700;
-	font-family: 'Roboto Condensed', sans-serif;
 }
+
 
 p{
 	font-size: 1.2em;
@@ -36,6 +39,7 @@ p{
 
 .lead{
 	font-weight: 300;
+	color: #3e3e3e
 }
 
 button {
@@ -72,14 +76,14 @@ button {
 /*	KEY COLOR
 /*-----------------------------------------------------------------------------------*/
 
-/*---- Typography ----*/
+/*---- Typography
 header h1, 
 .payoff h1,
 .details .carousel,
 .social a:hover{
 	color: #0bf397;
 }
-
+----*/
 .features p{
 	color: #06b872;
 }
@@ -150,27 +154,60 @@ nav.navbar.fixed-to-top{
 /*-----------------------------------------------------------------------------------*/
 
 header{
-	padding: 150px 0px 0px 0px;
-	height: 960px;
-	background: url('../img/nepal.jpg');
+	padding: 100px 0px 0px 0px;
+	height: 90vh;
+	background: url('../img/splash/book.png');
 	background-color: white!important;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
 }
 
-header h1{
-	text-transform: uppercase;
-	font-weight: 700;
-	font-weight: 300;
-	font-size: 100px;
-	font-family: 'Roboto Condensed', sans-serif;
-	
+header img.top-logo {
+	 height:180px; 
+	 border-bottom: 3em;
 }
 
-header p.lead{
-	font-size: 36px;
+header img,h2,p,h1{
+	text-shadow:0px 0px 9px #737373;
 }
+
+header h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 25px;
+	color: black !important;
+	font-family: 'Noto Serif Japanese', serif;
+}
+
+header p.top-en{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 15px;
+	color: black !important;
+	font-family: 'Noto Serif Japanese', serif;
+}
+
+header h1{
+	border-top: 2em;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 55px;
+	color: black !important;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+header p.top-en-h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 20px;
+	color: black !important;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+/*header p.lead{
+	font-size: 36px;
+}*/
 
 
 header .carousel-iphone{
@@ -213,6 +250,48 @@ header .carousel-indicators li {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* HEDERNAV
+/*-----------------------------------------------------------------------------------*/
+
+nav.hnavbar{	
+	margin-bottom: 0px;
+	width: 100%;
+	height: 10vh;
+	border-radius: 0px;
+	transition: all 0.2s;
+}
+
+nav li{
+	width:7vw;
+	text-align: center;
+	float: left;
+	list-style: none;
+	line-height: 10vh;
+}
+
+nav li.button a{
+	text-align: center;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 15px;
+	color: #7b7b7b;
+}
+
+nav .hnav-info{
+	line-height: 10vh;
+	color: #fff !important;
+}
+
+nav .col-md-3{
+	background-color: #31B0B8;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 23px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* PURCHASE
 /*-----------------------------------------------------------------------------------*/
 
@@ -235,8 +314,9 @@ header .carousel-indicators li {
 
 .payoff{
 	overflow: hidden;
-	padding: 230px 0px 150px 0px;
-	min-height: 600px;
+	/*padding: 230px 0px 150px 0px;*/
+	/*min-height: 600px;*/
+	height: 90vh;
 	background: url('../img/dunes.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
@@ -244,10 +324,21 @@ header .carousel-indicators li {
 }
 
 .payoff h1{
+	color: #fff;
+	padding: 1em 2em 0 0;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 2.8em;
+	font-weight: 100;
+	font-size: 60px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.payoff h2{
+	color: #fff;
+	padding: 1em 2em 0 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 25px;
+	font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -417,12 +508,71 @@ header .carousel-indicators li {
 	text-align: center;
 }
 
-.get-it button.app-store{
+/* ------------------   Buttonここから ------------------------------------------------------*/
+
+.get-it button.klis{
 	width: 152px;
-	height: 52px;
-	background: url(../img/badge-appstore.png) #373737 no-repeat 0px 5px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/klis-b.png) no-repeat 0px 5px;
+	background-size: contain;
 	color: white;
 }
+
+.get-it button.utsukuba{
+	width: 152px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/ut-b.png) no-repeat 0px 5px;
+	background-size: contain;
+	color: white;
+}
+
+.get-it button.admission{
+	width: 152px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/ac-b.png) no-repeat 0px 5px;
+	background-size: contain;
+	color: white;
+}
+
+.get-it button.informatics{
+	width: 152px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/info-b.png) no-repeat 0px 5px;
+	background-size: contain;
+	color: white;
+}
+
+.get-it button.mast{
+	width: 152px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/mast-b.png) no-repeat 0px 5px;
+	background-size: contain;
+	color: white;
+}
+
+.get-it button.coins{
+	width: 152px;
+	height: 152px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1); 
+	background: url(../img/links/coins-b.png) no-repeat 0px 5px;
+	background-size: contain;
+	color: white;
+}
+
+/*
+.get-it button.coins{
+	width: 152px;
+	height: 52px;
+	background: url(../img/links/coins-b.png) #373737 no-repeat 0px 5px;
+	color: white;
+}
+*/
+/* ------------------   Buttonここまで ------------------------------------------------------*/
 
 .get-it hr{
 	margin-top: 3em;
