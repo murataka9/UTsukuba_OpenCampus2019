@@ -163,7 +163,7 @@ nav.navbar.fixed-to-top{
 /*-----------------------------------------------------------------------------------*/
 
 header{
-	padding: 100px 0px 0px 0px;
+	padding: 15vh 0px 0px 0px;
 	height: 90vh;
 	background: url('../img/splash/book.png');
 	background-color: white!important;
@@ -276,7 +276,7 @@ nav.hnavbar{
 	text-align: center;
 	list-style: none;
 	line-height: 10vh;
-	float: right;
+	float: left;
 }
 
 nav li.button a{
@@ -285,7 +285,11 @@ nav li.button a{
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 15px;
-	color: #7b7b7b;
+	color: #aaa;
+}
+
+nav li.button a:hover{
+	color:#333;
 }
 
 nav .hnav-info{
@@ -327,9 +331,10 @@ nav .col-md-3{
 	/*padding: 230px 0px 150px 0px;*/
 	/*min-height: 600px;*/
 	min-height: 90vh;
-	background: url('../img/dunes.jpg');
-	background-position: center top;
+	/*background: url('../img/dunes.jpg');
+	background-position: center top;*/
 	background-repeat: repeat-x;
+	background: linear-gradient(-135deg, #31B0B8, #dda0dd);
 	color: white;
 }
 
@@ -340,6 +345,7 @@ nav .col-md-3{
 	font-weight: 100;
 	font-size: 60px;
 	font-family: 'Noto Sans Japanese', sans-serif;
+	text-shadow:0px 0px 9px #C3C3C3;
 }
 
 .payoff h2{
@@ -358,8 +364,12 @@ nav .col-md-3{
 	font-family: 'Noto Serif Japanese', serif;
 }
 
+.payoff li{
+	list-style: none;
+}
+
 .klisabout{
-	margin: 2em 2vw;
+	margin: 2em;
 	float: left;
 	line-height: 12vh;
 	list-style: none;
@@ -367,22 +377,41 @@ nav .col-md-3{
 	border: 2px solid #fff;
 	width: 14vw;
 	height: 12vh;
-	font-weight: 300;
-	font-size: 15px;
+	font-weight: 100;
+	font-size: 20px;
 	color: #fff;
 	font-family: 'Noto Sans Japanese', sans-serif;
+	box-shadow:0px 0px 9px #717171;
+}
+
+
+.klisabout:visited {
+  color: #fff;
+}
+
+.klisabout:hover {
+  background: #fff;
+  color: #333;
 }
 
 .klisabout-first {
+	margin-left: 13%;
+}
 
-	margin-left: 10%;
+.klisabout-first:visited {
+  color: #fff;
+}
+
+.klisabout-first:hover {
+  background: #fff;
+  color: #333;
 }
 /*-----------------------------------------------------------------------------------*/
 /*	DETAIL
 /*-----------------------------------------------------------------------------------*/
 
 .detail{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	padding: 50px 0px 0px 0px;
 	min-height: 500px;
 }
@@ -651,35 +680,45 @@ nav .col-md-3{
 /*	MEDIA QUERIES
 /*-----------------------------------------------------------------------------------*/
 
+/*-----------------------------------------------------------------------------------*/
+/*	@media 768
+/*-----------------------------------------------------------------------------------*/
+
 @media (max-width:768px) {
 	
 	header{
-		padding-bottom: 50px;
-		min-height: 1000px;
+		padding-top: 20vh;
+		/*min-height: 1000px;*/
 		height: 80vh;
+		background-size: 200%;
+		background-repeat: repeat;
 	}
 	
 	.navbar-nav {
 		float: left;
 		text-align: left;
-}
+    }
 
 /*------ my setting --------------------------------*/
-.hnavbar{
+    .hnavbar{
 
-	width: 100% !important;
-}
+	    width: 100% !important;
+    }
 
-.hnav .navbar-nav{
+    .hnav .navbar-nav{
 
-	max-height: 20vh;
-	width: 100vw !important;
-}
+	    max-height: 20vh;
+	    width: 100vw !important;
 
-/*------ my setting --------------------------------*/
-
+    }
 	
-}
+ }
+
+ /*------ my setting --------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	@media 992
+/*-----------------------------------------------------------------------------------*/
 
 @media (max-width:992px) {
 
@@ -711,14 +750,29 @@ header {
 }
 
 .payoff h1{
-	font-size: 24px;
+	font-size: 50px;
 }
+
+.klisabout{
+	margin: 4vw;
+	line-height: 10vh;
+	list-style: none;
+	text-align: center;
+	border: 2px solid #fff;
+	width: 80vw;
+	height: 10vh;
+}
+
 
 .features .col-md-4{
 	margin-bottom: 60px;
 }
 
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*	@media 480
+/*-----------------------------------------------------------------------------------*/
 
 @media (max-width:480px){
 
@@ -737,14 +791,18 @@ header {
 	}
 	
 	header{
-		padding-top: 30px;
 		padding-bottom: 0px;
 		height: 80vh;
-}
+    }
 	}
 	
 	header h1{
-		font-size: 70px;
+		font-size: 60px;
+	}
+
+
+	header h2{
+		font-size: 22px;
 	}
 	
 	.purchase{
@@ -754,8 +812,19 @@ header {
 	.features col-md-4{
 		margin-bottom: 50px;
 	}
-	
+
+	.payoff h2{
+	font-size: 22px;
+	padding-bottom: 1em;
 }
+
+.hnavbar .button{
+	font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	@media 192dpi
+/*-----------------------------------------------------------------------------------*/
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
