@@ -72,6 +72,12 @@ button {
 	visibility: visible!important;
 }
 
+.biblio{
+	font-weight: 100 !important;
+	font-size: 10px !important;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	color: #ccc;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	KEY COLOR
@@ -750,6 +756,26 @@ nav .col-md-3{
 	color: #3A3A3A;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.get-it a{
+	font-weight: 300;
+	font-size: 20px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.get-it p {
+	font-weight: 200;
+	font-size: 18px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.get-it h2{
+
+	font-weight: 100;
+	font-size: 40px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+
 }
 
 /*-----------------------------------------------------------------------------------*/
