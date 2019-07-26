@@ -72,6 +72,7 @@ button {
 	visibility: visible!important;
 }
 
+
 /*-----------------------------------------------------------------------------------*/
 /*	KEY COLOR
 /*-----------------------------------------------------------------------------------*/
@@ -91,7 +92,7 @@ header h1,
 /*---- Background ----*/
 .features,
 .detail .carousel-indicators .active {
-	background: #0bf397;	
+	background: #31B0B8;	
 }
 	
 
@@ -177,7 +178,7 @@ header img.top-logo {
 	 border-bottom: 3em;
 }
 
-header img,h2,p,h1{
+header *{
 	text-shadow:0px 0px 9px #737373;
 }
 
@@ -264,7 +265,7 @@ header .carousel-indicators li {
 
 nav.hnavbar{	
 	margin:0px;
-	width: 100%;
+	width: 97vw;
 	height: 10vh;
 	border-radius: 0px;
 	transition: all 0.2s;
@@ -333,12 +334,12 @@ nav .col-md-3{
 	min-height: 90vh;
 	/*background: url('../img/dunes.jpg');
 	background-position: center top;*/
-	background-repeat: repeat-x;
+	/*background-repeat: repeat-x;*/
 	background: linear-gradient(-135deg, #31B0B8, #dda0dd);
 	color: white;
 }
 
-.payoff h1{
+.payoff .sec-title{
 	color: #fff;
 	padding: 1em 2em 0 0;
 	text-transform: uppercase;
@@ -412,17 +413,30 @@ nav .col-md-3{
 
 .detail{
 	/*overflow: hidden;*/
-	padding: 50px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
 	min-height: 500px;
+}
+
+
+.detail .sec-title{
+	color: #777;
+	padding: 1em 2em 0 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 60px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-shadow:0px 0px 9px #C3C3C3;
 }
 
 .detail .title{
 	margin-bottom: 80px;
 	text-align: center;
+	font-weight: 100;
 }
 
 .detail .features .row{
 	margin-bottom: 40px;
+
 }
 
 .detail .carousel h1{
@@ -430,11 +444,17 @@ nav .col-md-3{
 }
 .detail .carousel h1, .detail p{
 	text-align: left;
-	font-weight: 300;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 200;
+	font-size: 40px;
+	/*font-weight: 300;*/
 }
 
 .detail p{
 	color: #aaa;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 200;
+	font-size: 17px;
 }
 
 .detail .carousel-control{
@@ -446,11 +466,12 @@ nav .col-md-3{
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 95px;
-	width: 320px;
+	padding-top: 1em;
+	/*width: 320px;*/
+	width: 70vw;
 	height: 450px;
-	background: url('../img/iphone-front.png') no-repeat;
-	background-size: 100%;
+	/*background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;*/
 }
 
 .detail .app-screenshot img{
@@ -505,13 +526,47 @@ nav .col-md-3{
 }
 
 .features p {
-	font-weight: 400;
+	font-weight: 200;
+	color: #fff;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.features .timesc {
+	padding:1em 0 0 0;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.features .sitesc {
+	padding:0 0 1em 0;
+	font-weight: 200;
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.features .sec-title{
+	color: #fff;
+	padding: 0 2em 1em 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 60px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-shadow:0px 0px 9px #C3C3C3;
 }
 
 .features h2{
 	color: #ffffff;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 100;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.features a{
+	color: #87cefa;
+	font-weight: 500;
 }
 
 .features .circle{
@@ -540,10 +595,11 @@ nav .col-md-3{
 .social{
 	overflow: hidden;
 	padding: 80px 0px 150px 0px;
-	min-height: 350px;
-	background: url('../img/sea.jpg');
-	background-position: center top;
-	background-repeat: repeat-x;
+	min-height: 70vh;
+	/*background: url('../img/sea.jpg');*/
+	background: linear-gradient(-135deg, #31B0B8, #dda0dd);
+	/*background-position: center top;*/
+	/*background-repeat: repeat-x;*/
 	color: white;
 }
 
@@ -564,6 +620,16 @@ nav .col-md-3{
 	
 }
 
+.social .sec-title{
+	color: #fff;
+	padding: 0 2em 2em 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 60px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-shadow:0px 0px 9px #C3C3C3;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	GET-IT
 /*-----------------------------------------------------------------------------------*/
@@ -571,6 +637,16 @@ nav .col-md-3{
 .get-it{
 	padding: 100px 0px 160px 0px;
 	text-align: center;
+}
+
+.get-it .sec-title{
+	color: #777;
+	padding: 0 2em 1em 0;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 60px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	text-shadow:0px 0px 9px #C3C3C3;
 }
 
 /* ------------------   Buttonここから ------------------------------------------------------*/
@@ -768,6 +844,15 @@ header {
 	margin-bottom: 60px;
 }
 
+.hnavbar .col-md-3{
+	padding-right: 0;
+	width: 100%;
+}
+
+.hnavbar .row{
+	margin: 0;
+}
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -791,8 +876,9 @@ header {
 	}
 	
 	header{
+		padding-top: 10vh;
 		padding-bottom: 0px;
-		height: 80vh;
+		height: 70vh;
     }
 	}
 	
