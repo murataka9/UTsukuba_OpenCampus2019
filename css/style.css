@@ -483,8 +483,7 @@ nav .col-md-3{
 
 .detail .app-screenshot img{
 	margin-right: auto;
-	margin-left: auto;
-	padding-left: 4px;
+	margin-left: 0px;
 	width: 280px;
 }
 
@@ -637,6 +636,9 @@ nav .col-md-3{
 	text-shadow:0px 0px 9px #C3C3C3;
 }
 
+.social .maps-img {
+	height: 70vh;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	GET-IT
 /*-----------------------------------------------------------------------------------*/
@@ -784,6 +786,13 @@ nav .col-md-3{
 	font-weight: 100 !important; 
 	font-size: 13px !important; 
 	color: #aaa !important;
+
+}
+
+.get-it .copy-lit {
+	font-weight: 100 !important; 
+	font-size: 13px !important; 
+	color: #aaa !important;
 }
 
 
@@ -826,6 +835,11 @@ nav .col-md-3{
  }
 
  /*------ my setting --------------------------------*/
+
+ .social .maps-img{
+ 	width: 70vw;
+ 	height: auto;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	@media 992
@@ -889,6 +903,8 @@ header {
 }
 
 }
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	@media 480
