@@ -79,6 +79,7 @@ button {
 	color: #ccc;
 }
 
+
 /*-----------------------------------------------------------------------------------*/
 /*	KEY COLOR
 /*-----------------------------------------------------------------------------------*/
@@ -777,6 +778,14 @@ nav .col-md-3{
 	font-family: 'Noto Sans Japanese', sans-serif;
 
 }
+
+.get-it .copy {
+	padding-top: 2em !important; 
+	font-weight: 100 !important; 
+	font-size: 13px !important; 
+	color: #aaa !important;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	MEDIA QUERIES
